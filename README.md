@@ -1,6 +1,6 @@
 # generic_optional&lt;T&gt;
 
-Compile-time wrapper over `std::optional` that enables optional reference types.
+Compile-time wrapper over `std::optional<T>` that enables optional reference types.
 
 ### How it works
 
@@ -17,10 +17,10 @@ Use `generic_optional<T>` instead of `optional<T>` in the declaration.
 ### Example
 
 ```cpp
-int test_value = 33;
 generic_optional<int> number;
 generic_optional<const int&> number_cref;
-    
+int test_value = 33;
+
 number = test_value;
 number_cref = test_value;
 
