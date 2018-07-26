@@ -1,4 +1,4 @@
-# `generic_optional<T>`
+# generic_optional&lt;T&gt;
 
 Compile-time wrapper over `std::optional` that enables optional reference types.
 
